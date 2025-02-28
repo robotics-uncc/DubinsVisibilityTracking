@@ -1,5 +1,5 @@
 # DubinsVisibilityTracking
-A Dubins vehilce equipped with a gimballed camera tracks a moving through an urban environment while maitining line of sight to the moving point. 
+A Dubins vehilce equipped with a gimballed camera tracks a moving point through an urban environment while maintaining line of sight to the moving point. 
 
 ![Solutions](/readme_image.png)
 ## Dependencies
