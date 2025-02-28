@@ -1,0 +1,17 @@
+visibility_vol:
+  id: {0:d}
+  width: 40
+  height: 40
+  fov_degrees: 90
+  # x, z, -y
+  origin: [{1:f}, {3:f}, {2:f}]
+  front: [1.0, 0.0, 0.0]
+  up: [0.0, 1.0, 0.0]
+  # max height of visibility volume above ground plane [meters]
+  up_max: 1000.0
+  # min height of visibility volume above ground plane [meters]
+  up_min: -1.0 
+  # max radius of visibility volume [meters] 
+  radius_max: {4:f}
+  output_file: {5:s}
+

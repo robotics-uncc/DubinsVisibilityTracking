@@ -1,0 +1,15 @@
+name: targettracking
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - matplotlib
+  - shapely
+  - numpy
+  - pyyaml
+  - jupyterlab
+  - scipy
+  - pandas
+  - pyvista
+  - tqdm

@@ -1,0 +1,14 @@
+world_coord_sys:
+  id: world
+  origin: [0.0, 0.0, 0.0]
+  up: [0.0, 1.0, 0.0]
+  front: [1.0, 0.0, 0.0]
+
+mesh:
+  id: {0:s}
+  position : [0.0, 0.0, 0.0]
+  scale : 1.0
+  orientation axis, angle: [1, 0, 0, 0]
+  format : OBJ
+  filename : {1:s}
+

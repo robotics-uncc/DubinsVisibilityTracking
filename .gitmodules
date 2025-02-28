@@ -1,0 +1,4 @@
+[submodule "subs/OpenGLDepthRenderer"]
+	path = subs/OpenGLDepthRenderer
+	url = https://github.com/uncc-visionlab/OpenGLDepthRenderer.git
+

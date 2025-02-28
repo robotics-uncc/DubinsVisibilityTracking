@@ -1,0 +1,18 @@
+logging:
+  level: 'INFO'
+  handlers:
+    - out: 'stdout'
+      name: 'info'
+      mode: 'a'
+      format: '%(asctime)s %(relativeCreated)6d %(threadName)s %(levelname)s %(message)s'
+      level: 'WARNING'
+    - out: 'stderr'
+      name: 'error'
+      mode: 'a'
+      format: '%(asctime)s %(relativeCreated)6d %(threadName)s %(levelname)s %(message)s'
+      level: 'WARNING'
+    - out: 'log.txt'
+      name: 'file'
+      mode: 'a'
+      format: '%(asctime)s %(relativeCreated)6d %(threadName)s %(levelname)s %(message)s'
+      level: 'DEBUG'
