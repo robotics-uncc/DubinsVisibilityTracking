@@ -1,5 +1,6 @@
 # DubinsVisibilityTracking
-
+A Dubins vehilce equipped with a gimballed camera tracks a moving through an urban environment while maitining line of sight to the moving point. 
+![Solutions](/readme_image.png)
 ## Dependencies
  - Ubuntu 20.04.5 LTS
  - Blender 3.6.x
