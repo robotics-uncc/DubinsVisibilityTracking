@@ -11,7 +11,7 @@ A Dubins vehilce equipped with a gimballed camera tracks a moving point through 
 ## Usage Instructions
 - Activate python environment ```conda activate dubinstracking```
 - Usage with ```python -m dubinstracking --help```
-- Create volumes ```python -m dubinstracking volumes --out data/environments/paper_small/ --csv data/environments/paper_slow/path.csv --radius 400 --alt 300 --cutoff 2e6```
+- Create volumes ```python -m dubinstracking volumes --out data/environments/paper_slow/ --csv data/environments/paper_slow/path.csv --radius 400 --alt 300 --cutoff 20e6 --map data/uptownCharlotte.obj```
 - Create orbits ```python -m dubinstracking circles --volumes data/environments/paper_slow/volumes.json --out data/environments/paper_slow/ --tspeed 5.0 --uavspeed 20.0 --uavturn 50.0```
 - Run Jupyter notebook to create plots ```notebooks/uav_trajectory.ipynb```
 ## Contact
