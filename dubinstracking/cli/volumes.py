@@ -1,5 +1,5 @@
-from targettracking.cli.subapplication import Subapplication
-from targettracking.util.meshSlicing import polygonFromBody
+from dubinstracking.cli.subapplication import Subapplication
+from dubinstracking.util.meshSlicing import polygonFromBody
 from argparse import ArgumentParser, FileType
 import numpy as np
 import os
@@ -65,7 +65,7 @@ class Volumes(Subapplication):
             json.dump(points.tolist(), f)
 
         cmdArgs = [
-            'blender', '-b', '--python', 'targettracking/cli/helpers/adaptiveSampling.py',
+            'blender', '-b', '--python', 'dubinstracking/cli/helpers/adaptiveSampling.py',
             '--',
             '--out', args.out,
             '--points', args.out + 'points.json',

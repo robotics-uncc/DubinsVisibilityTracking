@@ -2,7 +2,7 @@
     an orbit that translates and grows/shrinks
 """
 from typing import Callable
-from targettracking.util import fit, fit2deriv, fit2deriv2, fit2func
+from dubinstracking.util import fit, fit2deriv, fit2deriv2, fit2func
 import numpy as np
 from enum import IntEnum
 

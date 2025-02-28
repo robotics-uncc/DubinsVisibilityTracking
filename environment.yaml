@@ -1,4 +1,4 @@
-name: targettracking
+name: dubinstracking
 channels:
   - conda-forge
   - defaults

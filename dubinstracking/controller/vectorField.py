@@ -3,7 +3,7 @@ vector field controller that forces a Dubins vehicle onto a morphing circular or
 """
 import numpy as np
 from scipy.integrate import solve_ivp
-from targettracking.pathplanning import MorphingOrbit
+from dubinstracking.pathplanning import MorphingOrbit
 
 
 def angleDiff(a: float, b: float):

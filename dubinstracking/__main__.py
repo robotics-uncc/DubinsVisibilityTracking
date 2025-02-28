@@ -1,6 +1,6 @@
 import argparse
-from targettracking.configuration import ConfigurationFactory
-from targettracking.cli import Volumes, Circles
+from dubinstracking.configuration import ConfigurationFactory
+from dubinstracking.cli import Volumes, Circles
 import logging
 from logging.handlers import RotatingFileHandler
 import sys
@@ -12,15 +12,15 @@ def main():
         Volumes(),
         Circles()
     ]
-    parser = argparse.ArgumentParser(prog='targettracking')
-    parser.add_argument('-c', '--config', type=str, default='./targettracking/config.yaml')
+    parser = argparse.ArgumentParser(prog='dubinstracking')
+    parser.add_argument('-c', '--config', type=str, default='./dubinstracking/config.yaml')
     subparsers = parser.add_subparsers()
     for subCommand in subCommands:
         subparser = subparsers.add_parser(subCommand.key)
         subCommand.modifyParser(subparser)
     args = parser.parse_args()
     config = ConfigurationFactory.getInstance(args.config)['logging']
-    logger = logging.getLogger('targettracking')
+    logger = logging.getLogger('dubinstracking')
     for log in config['handlers']:
         if log['out'] == 'stdout':
             stream = sys.stdout

@@ -1,5 +1,5 @@
-from targettracking.cli.subapplication import Subapplication
-from targettracking.pathplanning import OrbitFactory, Orbit
+from dubinstracking.cli.subapplication import Subapplication
+from dubinstracking.pathplanning import OrbitFactory, Orbit
 from argparse import ArgumentParser, FileType
 import numpy as np
 import os
