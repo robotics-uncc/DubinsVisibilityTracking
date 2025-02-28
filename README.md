@@ -9,7 +9,6 @@ A Dubins vehilce equipped with a gimballed camera tracks a moving point through 
  - Run ```./deploy/install_dep.sh```
  - Run ```./build.sh```
 ## Usage Instructions
-- Start database ```docker-compose up -d```
 - Activate python environment ```conda activate dubinstracking```
 - Usage with ```python -m dubinstracking --help```
 - Create volumes ```python -m dubinstracking volumes --out data/environments/paper_small/ --csv data/environments/paper_slow/path.csv --radius 400 --alt 300 --cutoff 2e6```
