@@ -5,8 +5,10 @@ A Dubins vehilce equipped with a gimballed camera tracks a moving point through 
 ## Dependencies
  - Ubuntu 20.04.5 LTS
  - Blender 3.6.x
+ - conda
 ## Build Instructions
  - Run ```./deploy/install_dep.sh```
+ - Run ```cd ./deploy/```
  - Run ```./build.sh```
 ## Usage Instructions
 - Activate python environment ```conda activate dubinstracking```
