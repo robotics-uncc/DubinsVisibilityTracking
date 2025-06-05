@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python
+  - python==3.12
   - matplotlib
   - shapely
   - numpy
@@ -13,3 +13,7 @@ dependencies:
   - pandas
   - pyvista
   - tqdm
+  - pip:
+    - pymavlink
+    - cartopy
+    - utm

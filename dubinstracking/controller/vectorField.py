@@ -123,11 +123,11 @@ class VectorFieldController:
             
             psi_d = np.arctan2(u(x, t)[1], u(x, t)[0])
             psi = x[2]
-            psi_diff = (psi_d - psi + np.pi) % (2 * np.pi) - np.pi
-            a = (np.dot(g, e_r) + radius_dot) * (1 - np.cos(-psi_diff))/(-psi_diff)
-            b = u_theta * np.sin(-psi_diff) / -psi_diff
+            psi_diff = (psi - psi_d + np.pi) % (2 * np.pi) - np.pi
+            a = (np.dot(g, e_r) + radius_dot) * (1 - np.cos(psi_diff))/(psi_diff)
+            b = u_theta * np.sin(psi_diff) / psi_diff
             c = (self.beta * 2 / np.pi * np.arctan(self.beta * (r - radius)) / (1 + self.beta ** 2 * (r - radius) ** 2))
-            return -(a + b) * c
+            return (a + b) * c
 
         def sys(t, state):
 
